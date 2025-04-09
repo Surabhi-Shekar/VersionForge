@@ -1,3 +1,7 @@
+PES1UG23CA115 - SUMUKH - Backend and documentation
+PES1UG23CA116 - SURABHI C - Backend and documentation
+PES1UG23CA117 - TANISH A - Backend and documentation
+
 # 🤝 Contributing to Student Feedback Manager
 
 Thanks for your interest! Here's how you can help:
