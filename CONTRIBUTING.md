@@ -2,11 +2,11 @@ PES1UG23CA115 - SUMUKH - Backend and documentation
 PES1UG23CA116 - SURABHI C - Backend and documentation
 PES1UG23CA117 - TANISH A - Backend and documentation
 
-# 🤝 Contributing to Student Feedback Manager
+# Contributing to Student Feedback Manager
 
 Thanks for your interest! Here's how you can help:
 
-## 🧑‍💻 How to Contribute
+##  How to Contribute
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature`
@@ -14,14 +14,14 @@ Thanks for your interest! Here's how you can help:
 4. Push to your fork
 5. Submit a Pull Request
 
-## ✅ Guidelines
+##  Guidelines
 
 - Write clear, concise commit messages
 - Follow the existing code style
 - Add comments where needed
 - Write at least one test for new features
 
-## 🧪 Running Tests
+##  Running Tests
 
 Run `pytest` to ensure all tests pass before submitting a PR.
 
