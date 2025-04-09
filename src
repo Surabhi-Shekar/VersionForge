@@ -1,1 +1,41 @@
+import json
+import os
 
+FEEDBACK_FILE = "feedback.json"
+
+def load_feedback():
+    if not os.path.exists(FEEDBACK_FILE):
+        return []
+    with open(FEEDBACK_FILE, "r") as file:
+        try:
+            return json.load(file)
+        except json.JSONDecodeError:
+            return []
+
+def calculate_summary(feedback_list):
+    if not feedback_list:
+        return {
+            "total_feedback": 0,
+            "average_score": 0,
+            "entries": []
+        }
+    
+    total_score = sum(entry["score"] for entry in feedback_list)
+    average = total_score / len(feedback_list)
+
+    return {
+        "total_feedback": len(feedback_list),
+        "average_score": round(average, 2),
+        "entries": feedback_list
+    }
+
+if __name__ == "__main__":
+    feedback_data = load_feedback()
+    summary = calculate_summary(feedback_data)
+
+    print("\n Feedback Summary:")
+    print(f"Total Feedback Entries: {summary['total_feedback']}")
+    print(f"Average Score: {summary['average_score']}")
+    print("\n Student Feedback:")
+    for entry in summary["entries"]:
+        print(f"- {entry['name']}: {entry['score']}")
